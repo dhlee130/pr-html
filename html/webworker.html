@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>웹 워커 예제</title>
+</head>
+<body>
+    <button onclick="startWorker()">웹워커시작</button>
+    <button onclick="stopWorker()">웹워커종료</button>
+    <p>현재까지 발견된 가장큰 소수는
+        <output id="result"></output>
+    </p>
+
+    <script>
+
+        var w;
+
+        function startWorker() {
+            if (typeof (worker) !== "undefined") {
+                if (typeof (w) == "undefined") {
+                    w = new Worker("worker.js");
+                }
+                w.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            }
+            else {
+                document.getElementById("result").innerHTML = "지원x";
+            }
+
+        }
+
+        function stopWorker() {
+            w.terminate();
+        }
+
+    </script>
+</body>
+</html>

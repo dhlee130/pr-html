@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "페이지만들기", "페이지만들기", "{EBF2C1AE-A0A5-4D42-9CEA-9C766AEEC691}"
+	ProjectSection(SolutionItems) = preProject
+		computer.html = computer.html
+		index.html = index.html
+		mystyle.css = mystyle.css
+		register.html = register.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "연습", "연습", "{132E46B3-1464-4ACD-AF28-EE7FDF0998C7}"
+	ProjectSection(SolutionItems) = preProject
+		ajax.html = ajax.html
+		HTMLPage1.html = HTMLPage1.html
+		HTMLPage2.html = HTMLPage2.html
+		jql.html = jql.html
+		js_guess.html = js_guess.html
+		svg.html = svg.html
+		textfile1.txt = textfile1.txt
+		webworker.html = webworker.html
+		worker.js = worker.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "javaGame", "javaGame", "{24E98D2F-3B96-411E-8CFA-94955F12D946}"
+	ProjectSection(SolutionItems) = preProject
+		canvas_game.html = canvas_game.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

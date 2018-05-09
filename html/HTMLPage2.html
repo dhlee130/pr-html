@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        <button onclick="incrementNumber()" type="button">눌러보세요!</button>
+    </p>
+    <div id="target"></div>
+    <script>
+        function incrementNumber() {
+            if (('localStorage' in window) && window['localStorage'] !== null) {
+                if (localStorage.count) {
+                    localStorage.count++;
+                }
+                else {
+                    localStorage.count = 1;
+                }
+                document.getElementById("target").innerHTML =
+                    localStorage.count + "번 클릭했습니다";
+            
+            }
+            else {
+                document.getElementById("target").innerHTML = 
+                    "지원x"
+            }
+        }
+    </script>
+</body>
+</html>
